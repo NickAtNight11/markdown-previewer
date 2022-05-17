@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier Prime", serif;
+}
+  
+.box {
+outline: 4px solid #2B7A78;
+outline-offset: -4px;
+}
+
+.subheader {
+height: 5vh;
+border-bottom: 4px solid #2B7A78;
+}
+.subheader-title {
+margin: 1vh 0 0 1vw;
+font-size: 4vh;
+}
+
+#page {
+background-color: #3AAFA9;
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+#title {
+text-align: center;
+height: 10vh;
+font-size: 6vh;
+}
+
+#content {
+height: 85vh;
+width: 100vw;
+display: flex;
+}
+
+#left {
+height: 100%;
+width: 35vw;
+display: flex;
+flex-direction: column;
+}
+
+#right {
+height: 100%;
+width: 65vw;
+display: flex;
+flex-direction: column;
+}
+
+#edit-container {
+height: 94%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#editor {
+background-color: #DEF2F1;
+height: 90%;
+width: 90%;
+resize: none;
+font-size: 1.4vh;
+}
+
+#preview-container {
+margin-left: 4px;
+background-color: #FEFFFF;
+height: 93%;
+padding-left: 1vw;
+}
+
+#preview {
+background-color: #FEFFFF;
+height: 100%;
+width: 100%;
+overflow-y: scroll
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    #editor {
+        font-size: 1.2vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #page {
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    #title {
+        height: 8vw;
+        font-size: 6vw;
+    }
+
+    .subheader {
+        height: 4vh;
+    }
+
+    .subheader-title {
+        font-size: 3vh;
+    }
+
+    #page {
+        height: 100%;
+        outline: none;
+    }
+
+    #content {
+        flex-direction: column;
+        flex-grow: 1;
+        outline: none;
+    }
+
+    #left {
+        width: 100vw;
+        outline: 4px solid #2B7A78;
+        outline-offset: -4px;
+    }
+
+    #right {
+        width: 100vw;
+    }
+
+    #edit-container {
+        height: 80vh;
+    }
+
+    #editor {
+        height: 75vh;
+    }
+  }
+  
