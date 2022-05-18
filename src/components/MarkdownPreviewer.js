@@ -41,7 +41,7 @@ function MarkdownPreviewer() {
               <h2 className="subheader-title">Editor</h2>
             </div>
             <div id="edit-container">
-              <textarea id="editor" placeholder={inittext} rows="45" onChange={editText}/>
+              <textarea id="editor" placeholder={inittext} rows="42" onChange={editText}/>
             </div>
           </div>
           <div id="right" className="box">

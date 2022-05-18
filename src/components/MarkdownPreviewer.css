@@ -21,7 +21,7 @@ font-size: 4vh;
 #page {
 background-color: #3AAFA9;
 height: 100vh;
-width: 100vw;
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
@@ -35,7 +35,7 @@ font-size: 6vh;
 
 #content {
 height: 85vh;
-width: 100vw;
+width: 100%;
 display: flex;
 }
 
@@ -80,7 +80,7 @@ padding-left: 1vw;
 background-color: #FEFFFF;
 height: 100%;
 width: 100%;
-overflow-y: scroll
+overflow-y: scroll;
 }
 
 @media only screen and (max-width: 1250px) and (min-width: 600px) {
